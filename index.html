@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bridges Map</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mapLibre.css">
+
+</head>
+<body>
+
+  <h1>Are You Traveling Over Troubled Bridges?</h1>
+  <p>Some 118 sections of NYC bridges — which include overpasses, raised roadways and spans that go over another road, railway or bike path — were found by inspectors to be in poor condition in 2024. See how the bridges you use fared.  
+    .</p>
+
+
+    
+
+  <div id="filter-group" class="filter-group">
+    <input type="checkbox" id="filter-poor" checked>
+    <label for="filter-bar">Poor Bridges only</label>
+    <input type="checkbox" id="filter-100k">
+    <label for="filter-theatre">Traffic more than 100k</label>
+  </div>
+  
+
+  <!-- <div class="tooltip">
+    <div class="topBar">Good</div>
+    <h4 class="bridge_id">MEADOW LAKE BRIDGE</h4>
+    <h5 class="year">Built in 1997</h5>
+    <div class="data-container">
+      <div class="bridge-data">
+        <div class="data-item-group">
+            <h6>Daily Traffic</h6>
+            <h3>103M</h3>
+        </div>
+        <div class="data-item-group">
+            <h6>Share of trucks</h6>
+            <h3>103M</h3>
+        </div>
+      </div>
+        <div class="bridge-data-bottom">
+            <p class="bridge-datum"><span class="icon">4</span> Deck</p>
+            <p class="bridge-datum"><span class="icon">6</span> Superstructure</p>
+            <p class="bridge-datum"><span class="icon">N</span> Substructure</p>
+            <p class="bridge-datum"><span class="icon">N</span> Culvert</p>
+            <p class="bridge-datum"><span class="icon">9</span> Scour</p>
+        </div>
+
+    </div>
+  </div> -->
+
+
+
+    <!-- Search Bar Container -->
+    <div id="map">
+      <div id="search-container">
+          <input type="text" id="search-input" placeholder="Search for a place..." />
+          <div id="suggestions"></div>
+        </div>
+        <div class="legend-container">
+          <div class="legend">
+            <h3>Bridge Components</h3>
+            <ul>
+              <li><strong>The deck</strong> — The road, train tracks or walkways over a bridge</li>
+              <li><strong>The superstructure</strong> — The part visible above the deck. The girders, cables and more on top.</li>
+              <li><strong>The substructure</strong> — This is generally the part below the deck, including piers going into the ground.</li>
+              <li><strong>The scour</strong> — For bridges with piers in water, this measures erosion underneath those piers.</li>
+              <li><strong>The culvert</strong> — A tunnel under a bridge that allows water to pass through.</li>
+            </ul>
+          </div>
+          <button class="legend-toggle">Show Legend</button>
+        </div>
+    
+    </div>
+
+  <div class="main-container">
+
+  </div>
+
+
+  <script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
+  <script src="https://unpkg.com/@maplibre/maplibre-gl-geocoder@1.5.0/dist/maplibre-gl-geocoder.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

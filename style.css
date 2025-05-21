@@ -1,0 +1,197 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html { margin: 0; padding: 0; height: 100%; display: flex; flex-direction: column; 
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+#map { 
+    flex: 1; 
+}
+#search-container { position: absolute; top: 10px; left: 10px; z-index: 1; }
+#search-input { padding: 8px; width: 250px; border-radius: 4px; border: 1px solid #ddd; }
+#suggestions { 
+    position: absolute;
+    top: 32px;
+    left: 0px;
+    width: 99%;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0px 0px 4px 4px;
+}
+.suggestion-item { padding: 8px; cursor: pointer; }
+.suggestion-item:hover { background: #f0f0f0; }
+
+/* Tooltip */
+
+.tooltip {
+    width: fit-content;
+    background-color: #cccccc;
+    border-radius: 5px;
+}
+
+.topBar {
+    background-color: green;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.bridge-data {
+    display: flex;
+}
+
+.bridge_id {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 0;
+    padding: 0 10px;
+}
+
+.year {
+    text-align: center;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.bridge-datum {
+    font-size: 13px;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.maplibregl-popup-content {
+    border-radius: 5px;
+    padding: 0!important;
+}
+
+.icon {
+    color: #fff;
+    padding: 2px 3px;
+    background-color: red;
+    border-radius: 3px;
+}
+
+.bridge-data-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 5px;
+}
+
+.data-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.maplibregl-popup-close-button {
+    font-size: 24px;
+}
+
+.data-item-group {
+    padding:0px 5px;
+}
+
+.data-item-group > h6 {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+    /* margin-bottom: 5px; */
+}
+
+.data-item-group > h3 {
+    font-size: 14px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.barrier {
+    border: 1px solid #666;
+    margin-bottom: 5px;
+    height: 150px;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    background-color: orange;
+}
+
+#filter-group {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#filter-group > label {
+    font-size: 14px;
+    margin-left: 5px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+.legend-container {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;    
+    font-family: Arial, sans-serif;
+    z-index: 1;
+  }
+  .legend-toggle {
+    background: white;
+    color: black;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  .legend {
+    display: none;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    margin-bottom: 5px;
+  }
+  .legend h3 {
+    margin: 0 0 10px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .legend ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .legend li {
+    font-size: 14px;
+    margin-bottom: 6px;
+  }
+  .legend strong {
+    color: #333;
+  }
